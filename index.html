@@ -53,6 +53,12 @@
             navigator.serviceWorker.register("service-worker.js");
         }
     </script>
+    <script>
+    if (localStorage.getItem("auth") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
+
 </body>
 </html>
 
